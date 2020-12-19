@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import ToastAnimated, { showToast } from './components/Toast';
 
-function App() {
+
+const App = () => {
+  const handleClick = () => {
+    showToast({ type: 'newAchiev', message: achievementToastMessage })
+  }
+
+  const achievementToastMessage = () => {
+    return (
+      <div className="achievementContainer">
+        <img className="achievementImage" src="/achievementIcon.png" alt="" height={80} width={80} />
+        <div className="achievementText">
+          <div className="achievementTitle">Conquista desbloqueada</div>
+          <div className="achievementDescription">Parabéns você desbloqueou a conqusita!</div>
+        </div>
+
+      </div>
+    )
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <header className="App-header">
+            <ToastAnimated></ToastAnimated>
+            <button onClick={handleClick}> Clique aqui</button>
+          </header>
+        </div>
   );
 }
 
