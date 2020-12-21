@@ -35,11 +35,11 @@ export const showToast = ({ type, message }) => {
             break;
         case 'newAchiev':
             toast(message, {
-                position: 'bottom-center',
+                position: 'top-right',
                 draggable: true,
                 // closeButton: false,
                 bodyClassName: 'AchievementToastContainer',
-                autoClose: false,
+                // autoClose: false,
 
             });
             break;
