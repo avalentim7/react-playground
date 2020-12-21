@@ -39,7 +39,8 @@ export const showToast = ({ type, message }) => {
                 draggable: true,
                 // closeButton: false,
                 bodyClassName: 'AchievementToastContainer',
-                // autoClose: false,
+                autoClose: false,
+
             });
             break;
         default:

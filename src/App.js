@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import ToastAnimated, { showToast } from './components/Toast';
 
 
@@ -13,7 +13,7 @@ const App = () => {
         <img className="achievementImage" src="/achievementIcon.png" alt="" height={80} width={80} />
         <div className="achievementText">
           <div className="achievementTitle">Conquista desbloqueada</div>
-          <div className="achievementDescription">Parabéns você desbloqueou a conqusita!</div>
+          <div className="achievementDescription">Parabéns você desbloqueou a conquista: Herói na luta contra COVID-19!</div>
         </div>
 
       </div>
